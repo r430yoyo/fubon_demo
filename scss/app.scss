@@ -1,0 +1,113 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+// @font-face {
+//   font-family: 'NotoSansTC-Regular';
+//      src: url('Ubuntu-RI-webfont.eot');
+//      src: url('Ubuntu-RI-webfont.eot?#iefix') format('embedded-opentype'),
+//           url('Ubuntu-RI-webfont.woff') format('woff'),
+//           url('Ubuntu-RI-webfont.ttf') format('truetype'),
+//           url('Ubuntu-RI-webfont.svg#UbuntuItalic') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: NotoSansTC-Regular, sans-serif;
+}
+
+.footer-background {
+  background: #0093be; // 要成漸層色
+}
+
+.browser-Suggestions-background {
+  background: #196082;
+}
+
+.fund-warning-background {
+  background-image: url("../../image/section-10-bg.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.video-tab-background {
+  background-image: url("../../image/section-2-bg.png");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  background-image: url("../../image/section-1-bg.png");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.reason-background{
+  background-image: url("../../image/section-3-bg.png");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.global-area-background{
+  background-image: url("../../image/section-4-bg.png");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.download-area-background{
+  background-image: url("../../image/section-8-bg.png");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.howto-background{
+  background-image: url("../../image/section-9-bg.png");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.describe-info-background {
+  background: transparent
+    radial-gradient(
+      circle at center,
+      #ffffff 0%,
+      #fcfdfd 40%,
+      #f5f6f8 60%,
+      #e7ebef 76%,
+      #d5dbe2 89%,
+      #bfc9d3 100%
+    )
+    0% 0% no-repeat padding-box;
+}
+
+.info-button-bakground {
+  background: transparent linear-gradient(90deg, #6a82ff 0%, #197ec1 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.subscribe-button-info-shadow {
+  box-shadow: 0px 7px 0px #0000001a;
+}
+
+.subscribe-button-info-bakground {
+  background: transparent
+    linear-gradient(0deg, #0056a2 0%, #3797bd 97%, #0056a2 100%) 0% 0% no-repeat
+    padding-box;
+}
+
+.register-subscribe-button-info-bakground {
+  background: transparent linear-gradient(0deg, #ea6d2f 0%, #df943b 100%) 0% 0%
+    no-repeat padding-box;
+}
