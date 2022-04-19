@@ -13,7 +13,7 @@ body {
 .footer-background {
   // background: #0093be; // 要成漸層色
 
-  background: url("../../image/footer-bg02.jpg"), #0094bd;
+  background: url("../../image/footer-bg02.jpeg"), #0094bd;
   background-position: center top;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -27,16 +27,17 @@ body {
 }
 
 .fund-warning-background {
-  background: url("../../image/section-10-bg.png"),#f0f2f5;
+  background: url("../../image/section-10-bg.png"), #f0f2f5;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
 
 .video-tab-background {
-  background: url("../../image/section-2-2@2x.png"),url("../../image/section-2-1@2x.png"),#ffffff;
-  background-size: 100%,100%;
-  background-position: bottom,top;
+  background: url("../../image/section-2-2@2x.png"),
+    url("../../image/section-2-1@2x.png"), #ffffff;
+  background-size: 100%, 100%;
+  background-position: bottom, top;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -73,7 +74,8 @@ body {
 }
 
 .reason-background {
-  background: url("../../image/section-4-1@2x.png"),url("../../image/section-3-1@2x.png"),#b2e4fe;
+  background: url("../../image/section-4-1@2x.png"),
+    url("../../image/section-3-1@2x.png"), #b2e4fe;
   background-size: 100%, 100%;
   background-position: bottom center, top center;
   background-repeat: no-repeat;
@@ -87,7 +89,7 @@ body {
 // }
 
 .global-area-background {
-  background: url("../../image/section-4-bg.png"),#105894;
+  background: url("../../image/section-4-bg.png"), #105894;
   background-size: 100%;
   background-position: top;
   background-repeat: no-repeat;
@@ -95,9 +97,10 @@ body {
 }
 
 .download-area-background {
-  background: url("../../image/section-8-2@2x.png"),url("../../image/section-8-1@2x.png"), #e6eaef;
-  background-size: 100%,100%;
-  background-position: bottom,top;
+  background: url("../../image/section-8-2@2x.png"),
+    url("../../image/section-8-1@2x.png"), #e6eaef;
+  background-size: 100%, 100%;
+  background-position: bottom, top;
   background-repeat: no-repeat;
 }
 
@@ -145,6 +148,19 @@ body {
 .go-to-play-btn-background {
   background: transparent linear-gradient(180deg, #68d9f9 0%, #0f55af 100%) 0%
     0% no-repeat padding-box;
+    position: relative;
+    &::after{
+      content:"";
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      left: 50%;
+      top:0;
+      transform: translate(-50%,0%);
+      display: block;
+      box-shadow: 0px 3px 8px 0px #0ca7c4;
+      z-index: -1;
+    }
 }
 .hashtab-btn-wrap-background {
   position: relative;
@@ -206,6 +222,7 @@ body {
 }
 
 .video-btn-active {
+  color: #fefe76;
   background: transparent
     linear-gradient(180deg, #612d7f 0%, #252d6c 50%, #052d62 100%) 0% 0%
     no-repeat padding-box;
@@ -236,6 +253,65 @@ body {
   -webkit-box-reflect: below 5px -webkit-linear-gradient(transparent, transparent
         87%, rgba(255, 255, 255, 0.45));
   display: block;
+}
+
+.reason-background {
+  .swiper-pagination-bullet {
+    background: unset;
+  }
+  .swiper-pagination-bullet-active {
+    background: #0064c3;
+    color: #ffffff;
+  }
+}
+
+.global-area-background {
+  .swiper-pagination-bullet {
+    background: unset;
+  }
+  .swiper-pagination-bullet-active {
+    background: #ffffff;
+    color: #0f477c;
+  }
+}
+
+.hashtab-btn-fix-background {
+  // background-image: url("../../image/mobile-fixed@2x.png");
+  background: transparent linear-gradient(180deg, transparent 0%, #181464 100%)
+    0% 0% no-repeat padding-box;
+}
+
+.hashtab-btn-fix-background:before {
+  content: "";
+  position: absolute;
+  background-image: url("../../image/section-2-nav-left-img.svg");
+  background-size: 100%;
+  width: 10rem;
+  height: 10rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  left: 1%;
+  bottom: 10%;
+  pointer-events: none;
+}
+
+.hashtab-btn-fix-background:after {
+  content: "";
+  position: absolute;
+  background-image: url("../../image/section-2-nav-right-img.svg");
+  background-size: 100%;
+  width: 6rem;
+  height: 6rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  right: 3.5%;
+  bottom: 10%;
+  pointer-events: none;
+}
+
+.hover-btn-text-bright:hover {
+  text-shadow: #0ca7c4 3px 1px 24px, #0ca7c4 -1px -1px 24px;
+  box-shadow: 0px 0px 8px 3px #0ca7c4;
 }
 
 @import "erica";

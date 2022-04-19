@@ -4,53 +4,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./dist/output.css" rel="stylesheet" />
-  <link href="./dist/css/app.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link href="/dist/output.css?ver=0.1" rel="stylesheet" />
+  <link href="/dist/css/app.min.css?ver=0.1" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="banner relative">
-    <header class="absolute w-full text-xl md:text-2xl">
+    <header class="absolute w-full text-xl md:text-2xl z-10">
       <div class="bg-[#0f477c] md:bg-[transparent]">
-        <div class="md:container mx-auto py-2 md:py-10 flex justify-between">
+        <div class="md:container mx-auto px-4 py-2 md:py-10 flex justify-between">
           <div class="p-2 md:p-0">
             <button>
               <img class="hidden md:block h-[1.5em]" src="./image/logo.svg" alt="" />
               <img class="block md:hidden h-[1.5em]" src="./image/logo-mb.svg" alt="" />
             </button>
           </div>
-          <div class="flex -m-1 items-center">
-            <div class="m-1 md:block hidden">
-              <button class="go-to-play-btn-background text-white font-bold rounded-lg">
-                <div class="flex items-center justify-center p-2">
-                  <div class="px-2">
-                    <img class="h-[1.25em]" src="./image/header-btn-play.svg" alt="">
+          <div class="m-1">
+            <div class="flex -m-1 items-center">
+              <div class="m-1 md:block hidden">
+                <button class="go-to-play-btn-background text-white font-bold rounded-lg">
+                  <div class="flex items-center justify-center p-2">
+                    <div class="px-2">
+                      <img class="h-[1.25em]" src="./image/header-btn-play.svg" alt="" />
+                    </div>
+                    <div class="px-2">投資搶先看！影音專區</div>
                   </div>
-                  <div>
-                    投資搶先看！影音專區
-                  </div>
-                </div>
-              </button>
-            </div>
-            <div class="m-1 md:hidden flex items-center">
-              <button>
-                <img class="h-[2em]" src="./image/btn1.svg" alt="">
-              </button>
-            </div>
-            <div class="m-1 md:hidden flex items-center">
-              <button>
-                <img class="h-[2em]" src="./image/btn2.svg" alt="">
-              </button>
-            </div>
-            <div class="m-1 flex items-center">
-              <button>
-                <img class="h-[2em]" src="./image/fb.svg" alt="">
-              </button>
-            </div>
-            <div class="m-1 flex items-center">
-              <button>
-                <img class="h-[2em]" src="./image/line.svg" alt="">
-              </button>
+                </button>
+              </div>
+              <div class="m-1 md:hidden flex items-center">
+                <button>
+                  <img class="h-[2em]" src="./image/btn1.svg" alt="" />
+                </button>
+              </div>
+              <div class="m-1 md:hidden flex items-center">
+                <button>
+                  <img class="h-[2em]" src="./image/btn2.svg" alt="" />
+                </button>
+              </div>
+              <div class="m-1 flex items-center">
+                <button>
+                  <img class="h-[2em]" src="./image/fb.svg" alt="" />
+                </button>
+              </div>
+              <div class="m-1 flex items-center">
+                <button>
+                  <img class="h-[2em]" src="./image/line.svg" alt="" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -58,39 +60,44 @@
 
       <div class="md:container mx-auto flex justify-center">
         <div class="w-4/5 pt-10 md:pt-0">
-          <img src="./image/main-slogan.svg" alt="">
+          <img src="./image/main-slogan.svg" alt="" />
         </div>
       </div>
     </header>
 
-    <img class="min-h-[600px] object-cover" src="./image/top-img.png" alt="" />
+    <img class="min-h-[600px] object-cover -z-10" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000" src="./image/top-img.png" alt="" />
 
     <div class="hashtab-btn-group hidden md:block absolute w-full bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
       <div class="md:container mx-auto py-10 flex justify-center">
         <div
           class="hashtab-btn-wrap-background flex flex-wrap justify-center -m-[0.5rem] text-2xl px-24 py-5 rounded-l-full rounded-r-full">
           <div class="m-[0.5rem]">
-            <a href="#reason" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4" >
+            <a href="#reason"
+              class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4 hover-btn-text-bright">
               實質資產當道
             </a>
           </div>
           <div class="m-[0.5rem]">
-            <a href="#global" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4">
+            <a href="#global"
+              class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4 hover-btn-text-bright">
               前瞻全球不動產
             </a>
           </div>
           <div class="m-[0.5rem]">
-            <a href="#house" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4">
+            <a href="#house"
+              class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4 hover-btn-text-bright">
               基金小檔案
             </a>
           </div>
           <div class="m-[0.5rem]">
-            <a href="#download" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4">
+            <a href="#download"
+              class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4 hover-btn-text-bright">
               下載專區
             </a>
           </div>
           <div class="m-[0.5rem]">
-            <a href="#howto" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4">
+            <a href="#howto"
+              class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4 hover-btn-text-bright">
               ETF如何買
             </a>
           </div>
@@ -99,106 +106,144 @@
     </div>
   </div>
 
-  <div class="video-tab-background pt-24 w-full">
-    <div class="md:container mx-auto px-4 md:px-0 py-2 md:py-10 flex flex-col items-center">
-      <div class="text-6xl mb-10">
-        <img class="h-[1em]" src="./image/section-2-slogan.svg" alt="">
+  <div class="video-tab-background pt-24 w-full overflow-hidden">
+    <div class="md:container mx-auto px-4 py-2 md:py-10 flex flex-col items-center">
+      <div class="text-6xl mb-10" data-aos="fade-left">
+        <img class="h-[2em]" src="./image/section-2-slogan.svg" alt="" />
       </div>
-      <div class="bg-white border-8 border-white rounded-2xl w-full overflow-hidden">
+      <div class="w-full md:w-11/12 lg:w-8/12 bg-white border-8 border-white rounded-2xl w-full overflow-hidden" data-aos="fade-up">
         <div
           class="flex flex-wrap describe-info-background md:divide-x md:divide-y-0 divide-y divide-[#2a4f7c] text-2xl">
           <div class="w-full md:w-1/2 flex divide-x divide-[#2a4f7c]">
-            <button class="w-1/2  text-center border- font-bold py-4 text-[#fefe76] video-btn-active">
+            <button class="w-1/2 text-center font-bold py-4 video-swiper-btn video-btn-active" data-video="0">
               全面進軍房地產<br />擴建投資版圖!
             </button>
-            <button class="w-1/2 text-center font-bold py-4">
+            <button class="w-1/2 text-center font-bold py-4 video-swiper-btn" data-video="1">
               小資族如何成為<br />包租公、包租婆
             </button>
           </div>
 
           <div class="w-full md:w-1/2 flex divide-x divide-[#2a4f7c]">
-            <button class="w-1/2 text-center font-bold py-4">
+            <button class="w-1/2 text-center font-bold py-4 video-swiper-btn" data-video="2">
               達人教戰!<br />即刻領取不動產投資秘笈
             </button>
-            <button class="w-1/2 text-center font-bold py-4">
+            <button class="w-1/2 text-center font-bold py-4 video-swiper-btn" data-video="3">
               房市播報，<br />參與不動產投資現在
             </button>
           </div>
         </div>
-        <div class="flex justify-center bg-[#052d62]">
-          <div class="videobox">
-            <iframe src="https://www.youtube.com/embed/ltG35eB078Q" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <div class="hidden">
-            <video src=""></video>
-          </div>
-          <div class="hidden">
-            <video src=""></video>
-          </div>
-          <div class="hidden">
-            <video src=""></video>
+
+        <div class="bg-[#052d62]">
+          <div class="swiper video-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="videobox">
+                  <iframe src="https://www.youtube.com/embed/ltG35eB078Q" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videobox">
+                  <div>
+                    <img src="./image/section-2-coming-soon@2x.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videobox">
+                  <img src="./image/section-2-coming-soon@2x.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videobox">
+                  <img src="./image/section-2-coming-soon@2x.png" alt="">
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="reason-background" id="reason">
-    <div class="md:container mx-auto py-10">
+  <div class="reason-background overflow-hidden" id="reason">
+    <div class="md:container mx-auto py-10 px-4">
       <div class="flex flex-col items-center">
-        <div class="text-6xl">
+        <div class="text-6xl" data-aos="fade-left">
           <img class="h-[1em]" src="./image/section-3-title.svg" alt="" />
         </div>
         <div class="flex items-center text-6xl">
           <div class="m-4 w-1/4 md:block hidden">
-            <img class="h-[0.5em]" src="./image/section-3-sub-title-left.svg" alt="">
+            <img class="h-[0.5em]" src="./image/section-3-sub-title-left.svg" alt="" />
           </div>
           <div class="m-4 w-full md:w-1/2">
-            <img class="h-[2em] relfect-2" src="./image/section-3-sub-title-no-shadow.svg" alt="">
+            <img class="h-[2em] relfect-2" src="./image/section-3-sub-title-no-shadow.svg" alt="" />
           </div>
           <div class="m-4 w-1/4 md:block hidden flex flex-col justify-end">
-            <img class="h-[0.5em]" src="./image/section-3-sub-title-right.svg" alt="">
+            <img class="h-[0.5em]" src="./image/section-3-sub-title-right.svg" alt="" />
           </div>
         </div>
 
-        <div class="mt-15 text-center text-3xl leading-10">
+        <div class="mt-15 text-center text-3xl leading-10" data-aos="fade-left">
           投資REITs好處多多，如同你擁有一部分的房地產權，收益也是來自租金。<br />
           儘管各國規定稍有不同，但基本上REITs獲利的大多數必須發放給股東，並且可以免除一部分稅負。
         </div>
 
-        <div class="swiper w-full relative py-10">
-          <div class="w-1/2 mx-auto">
-            <img src="./image/section-3-img.svg" alt="" />
-            <div class="flex flex-col items-center justify-center">
-              <div class="text-center">
-                資料來源：富邦投信整理；資料日期：2022.03.31(圖檔為富邦投信版權所有)
+        <div class="w-full relative py-10" data-aos="fade-up">
+          <div class="w-4/5 md:w-1/2 mx-auto ">
+            <div class="swiper reason-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./image/section-3-img.svg" alt="" />
+                  <div class="flex flex-col items-center justify-center">
+                    <div class="text-center">
+                      資料來源：富邦投信整理；資料日期：2022.03.31(圖檔為富邦投信版權所有)
+                    </div>
+                    <div class="text-[#d11c24] text-center">
+                      註：以上為REITs投資特性，非屬富邦全球入息不動產與基礎建設ETF基金之特性
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/section-3-img.svg" alt="" />
+                  <div class="flex flex-col items-center justify-center">
+                    <div class="text-center">
+                      資料來源：富邦投信整理；資料日期：2022.03.31(圖檔為富邦投信版權所有)
+                    </div>
+                    <div class="text-[#d11c24] text-center">
+                      註：以上為REITs投資特性，非屬富邦全球入息不動產與基礎建設ETF基金之特性
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="text-[#d11c24] text-center">
-                註：以上為REITs投資特性，非屬富邦全球入息不動產與基礎建設ETF基金之特性
+            </div>
+            <div class="w-1/4 md:block hidden absolute top-0 left-0 h-full">
+              <div class="flex items-center justify-end h-full px-10">
+                <img class="h-[6em] left-[10px] reason-swiper-button-prev swiper-button-prev static"
+                  src="./image/section-3-arrow-left.svg" alt="" />
+              </div>
+            </div>
+            <div class="w-1/4 md:block hidden absolute top-0 right-0 h-full">
+              <div class="flex items-center justify-start h-full px-10">
+                <img class="h-[6em] reason-swiper-button-next swiper-button-next static"
+                  src="./image/section-3-arrow-right.svg" alt="" />
               </div>
             </div>
           </div>
-          <div class="w-1/4 md:block hidden absolute top-0 left-0 h-full">
-            <div class="flex items-center justify-end h-full px-10">
-              <img class="h-[6em]" src="./image/section-3-arrow-left.svg" alt="">
-            </div>
-          </div>
-          <div class="w-1/4 md:block hidden absolute top-0 right-0 h-full">
-            <div class="flex items-center justify-start h-full px-10">
-              <img class="h-[6em]" src="./image/section-3-arrow-right.svg" alt="">
-            </div>
-          </div>
+
           <div class="w-100 flex md:hidden justify-center items-center py-4">
-            <div>
-              <img class="h-[1em]" src="./image/section-3-arrow-left.svg" alt="">
+            <div class="w-[2em] flex items-center justify-center">
+              <img class="h-[1em] reason-swiper-button-prev swiper-button-prev static mt-0"
+                src="./image/section-3-arrow-left.svg" alt="" />
             </div>
-            <div class="rounded-full w-[2em] h-[2em] flex items-center justify-center">1</div>
-            <div class="rounded-full w-[2em] h-[2em] flex items-center justify-center  bg-[#0064c3] text-white">2</div>
-            <div class="rounded-full w-[2em] h-[2em] flex items-center justify-center">3</div>
-            <div>
-              <img class="h-[1em]" src="./image/section-3-arrow-right.svg" alt="">
+            <div class="w-auto">
+              <div class="reason-swiper-pagination flex justify-center"></div>
+            </div>
+            <div class="w-[2em] flex items-center justify-center">
+              <img class="h-[1em] reason-swiper-button-next swiper-button-next static mt-0"
+                src="./image/section-3-arrow-right.svg" alt="" />
             </div>
           </div>
         </div>
@@ -206,61 +251,98 @@
     </div>
   </div>
 
-  <div class="global-area-background" id="global">
-    <div class="md:container mx-auto py-10">
-      <div class="text-6xl flex justify-center">
-        <img class="h-[2em]" src="./image/section-4-slogan.svg" alt="">
+  <div class="global-area-background overflow-hidden" id="global">
+    <div class="md:container mx-auto py-10 px-4">
+      <div class="text-6xl flex justify-center" data-aos="fade-left">
+        <img class="h-[2em]" src="./image/section-4-slogan.svg" alt="" />
       </div>
-      <div class="relative">
+      <div class="relative" data-aos="fade-up">
         <div class="w-4/5 md:w-1/2 mx-auto text-white">
-          <div
-            class="global-card-background flex flex-col items-center py-2 px-10 border border-[#3e85b6] rounded-2xl relative before:absolute before:block before:w-full before:h-full before:top-1 before:left-0.5 before:shadow before:shadow-[#689ec5] before:rounded-2xl">
-            <div class="w-full">
-              <img src="./image/section-4-title.svg" alt="">
-            </div>
-            <div>
-              本基金聚焦全球前三十大不動產及基礎建設標的，跨及澳大利亞、日本、比利時、馬來西亞、加拿大、荷蘭、法國、新加坡、德國、西班牙、香港
-              (含中國企業於香港掛牌)、台灣、愛爾蘭、英國、義大利及美國，共16個市場。讓你成為全球不動產的包租公或包租婆！
-            </div>
-            <div class="py-10 w-full">
-              <img class="w-full" src="./image/section-4-earth.svg" alt="" />
-            </div>
-            <div>
-              資料來源：富邦投信整理；資料日期：2022.3.31(圖檔為富邦投信版權所有)
-            </div>
+          <div class="swiper global-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="global-card-background flex flex-col items-center py-2 px-10 border border-[#3e85b6] rounded-2xl relative before:absolute before:block before:w-full before:h-full before:top-1 before:left-0.5 before:shadow before:shadow-[#689ec5] before:rounded-2xl">
+                  <div class="w-full">
+                    <img src="./image/section-4-title.svg" alt="" />
+                  </div>
+                  <div>
+                    本基金聚焦全球前三十大不動產及基礎建設標的，跨及澳大利亞、日本、比利時、馬來西亞、加拿大、荷蘭、法國、新加坡、德國、西班牙、香港
+                    (含中國企業於香港掛牌)、台灣、愛爾蘭、英國、義大利及美國，共16個市場。讓你成為全球不動產的包租公或包租婆！
+                  </div>
+                  <div class="py-10 w-full">
+                    <img class="w-full" src="./image/section-4-earth.svg" alt="" />
+                  </div>
+                  <div>
+                    資料來源：富邦投信整理；資料日期：2022.3.31(圖檔為富邦投信版權所有)
+                  </div>
 
-            <div class="w-100 flex md:hidden justify-center items-center py-4">
-              <div>
-                <img class="h-[1em]" src="./image/section-4-left-arrow.svg" alt="">
+                  <div class="w-100 flex md:hidden justify-center items-center py-4">
+                    <div class="w-[2em] flex items-center justify-center">
+                      <img class="h-[1em]" src="./image/section-4-left-arrow.svg" alt="" />
+                    </div>
+                    <div class="w-auto">
+                      <div class="global-swiper-pagination flex justify-center"></div>
+                    </div>
+                    <div class="w-[2em] flex items-center justify-center">
+                      <img class="h-[1em]" src="./image/section-4-right-arrow.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="rounded-full w-[2em] h-[2em] flex items-center justify-center">1</div>
-              <div class="rounded-full w-[2em] h-[2em] flex items-center justify-center  bg-white text-[#0f477c]">2</div>
-              <div class="rounded-full w-[2em] h-[2em] flex items-center justify-center">3</div>
-              <div>
-                <img class="h-[1em]" src="./image/section-4-right-arrow.svg" alt="">
+              <div class="swiper-slide">
+                <div
+                  class="global-card-background flex flex-col items-center py-2 px-10 border border-[#3e85b6] rounded-2xl relative before:absolute before:block before:w-full before:h-full before:top-1 before:left-0.5 before:shadow before:shadow-[#689ec5] before:rounded-2xl">
+                  <div class="w-full">
+                    <img src="./image/section-4-title.svg" alt="" />
+                  </div>
+                  <div>
+                    本基金聚焦全球前三十大不動產及基礎建設標的，跨及澳大利亞、日本、比利時、馬來西亞、加拿大、荷蘭、法國、新加坡、德國、西班牙、香港
+                    (含中國企業於香港掛牌)、台灣、愛爾蘭、英國、義大利及美國，共16個市場。讓你成為全球不動產的包租公或包租婆！
+                  </div>
+                  <div class="py-10 w-full">
+                    <img class="w-full" src="./image/section-4-earth.svg" alt="" />
+                  </div>
+                  <div>
+                    資料來源：富邦投信整理；資料日期：2022.3.31(圖檔為富邦投信版權所有)
+                  </div>
+
+                  <div class="w-100 flex md:hidden justify-center items-center py-4">
+                    <div>
+                      <img class="h-[1em]" src="./image/section-4-left-arrow.svg" alt="" />
+                    </div>
+                    <div class="w-auto">
+                      <div class="global-swiper-pagination flex justify-center"></div>
+                    </div>
+                    <div>
+                      <img class="h-[1em]" src="./image/section-4-right-arrow.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
         <div class="w-1/4 hidden md:block absolute top-0 left-0 h-full">
           <div class="flex items-center justify-end h-full px-10">
-            <img class="h-[6em]" src="./image/section-4-arrow-left.svg" alt="">
+            <img class="h-[6em] global-swiper-button-prev swiper-button-prev static"
+              src="./image/section-4-arrow-left.svg" alt="" />
           </div>
         </div>
         <div class="w-1/4 hidden md:block absolute top-0 right-0 h-full">
           <div class="flex items-center justify-start h-full px-10">
-            <img class="h-[6em]" src="./image/section-4-arrow-right.svg" alt="">
+            <img class="h-[6em] global-swiper-button-next swiper-button-next static"
+              src="./image/section-4-arrow-right.svg" alt="" />
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="house-table" id="house">
-    <div class="house1 relative">
-      <img class="hidden md:block" src="./image/new-house1.png" alt="">
-      <img class="block md:hidden" src="./image/mobile-new-house1@3x.png" alt="">
+  <div class="house-table overflow-hidden" id="house">
+    <div class="house1 relative" data-aos="fade-up">
+      <img class="hidden md:block" src="./image/new-house1.png" alt="" />
+      <img class="block md:hidden" src="./image/mobile-new-house1@3x.png" alt="" />
 
       <!-- <img src="./image/house1@2x.png" alt="" />
       <div class="absolute h-full w-full top-0 left-0 pt-20">
@@ -270,10 +352,9 @@
         </div>
       </div> -->
     </div>
-    <div class="house2 relative">
-      <img class="hidden md:block" src="./image/new-house2.png" alt="">
-      <img class="block md:hidden" src="./image/mobile-new-house2@3x.png" alt="">
-
+    <div class="house2 relative" data-aos="fade-up">
+      <img class="hidden md:block" src="./image/new-house2.png" alt="" />
+      <img class="block md:hidden" src="./image/mobile-new-house2@3x.png" alt="" />
 
       <!-- <img src="./image/house2-notree@2x.png" alt="" />
       <img class="absolute bottom-[5%] right-[5%] w-[400px] z-10 hidden lg:block" src="./image/house2-tree@2x.png" alt="" />
@@ -284,9 +365,9 @@
         </div>
       </div> -->
     </div>
-    <div class="house3 relative">
-      <img class="hidden md:block" src="./image/new-house3.png" alt="">
-      <img class="block md:hidden" src="./image/mobile-new-house3@3x.png" alt="">
+    <div class="house3 relative" data-aos="fade-up">
+      <img class="hidden md:block" src="./image/new-house3.png" alt="" />
+      <img class="block md:hidden" src="./image/mobile-new-house3@3x.png" alt="" />
       <!-- <img class="object-cover h[]" src="./image/house3-notree@2x.png" alt="" />
       <img class="absolute bottom-[2%] right-[5%] w-[400px] z-10 hidden lg:block" src="./image/house3-tree@2x.png" alt="" />
       <div class="absolute h-full w-full top-0 left-0 pt-20">
@@ -298,39 +379,39 @@
     </div>
   </div>
 
-  <div class="download-area-background" id="download">
-    <div class="md:container mx-auto py-10 space-y-20 flex flex-col items-center">
-      <div class="w-full text-6xl flex justify-center">
-        <img class="h-[2em]" src="./image/section-8-title.svg" alt="">
+  <div class="download-area-background overflow-hidden" id="download">
+    <div class="md:container mx-auto py-10 px-4 space-y-4 flex flex-col items-center">
+      <div class="w-full text-6xl flex justify-center" data-aos="fade-left">
+        <img class="h-[2em]" src="./image/section-8-title.svg" alt="" />
       </div>
-      <div class="text-6xl text-center font-bold text-[#3d2db3]">
-        富邦全球入息不動產與基礎建設ETF
+      <div class="text-4xl text-center font-bold text-[#3d2db3]" data-aos="fade-left">
+        富邦全球入息不動產與基礎建設ETF基金
       </div>
-      <div class="flex flex-wrap md:flex-nowrap -m-4 px-10 md:px-0">
-        <div class="w-full md:w-1/3 m-4 relfect">
+      <div class="flex flex-wrap md:flex-nowrap md:-m-4 px-10 md:px-0" data-aos="fade-up">
+        <!-- <div class="w-full md:w-1/3 m-4 relfect">
           <a>
-            <img class="w-full" src="./image/section-8-download-img-1.svg" alt="">
+            <img class="w-full" src="./image/section-8-download-img-1.svg" alt="" />
           </a>
         </div>
         <div class="w-full md:w-1/3 m-4 relfect">
           <a>
-            <img class="w-full" src="./image/section-8-download-img-2.svg" alt="">
+            <img class="w-full" src="./image/section-8-download-img-2.svg" alt="" />
           </a>
-        </div>
-        <div class="w-full md:w-1/3 m-4 relfect">
+        </div> -->
+        <div class="w-full m-4 relfect">
           <a target="_blank" href="./富邦全球入息不動產與基礎建設ETF基金申購書.pdf">
-            <img class="w-full" src="./image/section-8-download-img-3.svg" alt="">
+            <img class="w-full" src="./image/section-8-download-img-3.svg" alt="" />
           </a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="howto-background" id="howto">
-    <div class="md:container mx-auto py-10 flex flex-col items-center">
-      <h3 class="text-6xl text-[#534741] py-2 font-semibold">ETF如何買</h3>
-      <div class="text-2xl">【募集期間限定】</div>
-      <div class="p-10">
+  <div class="howto-background overflow-hidden" id="howto">
+    <div class="md:container mx-auto py-10 px-4 flex flex-col items-center">
+      <h3 class="text-6xl text-[#534741] py-2 font-semibold" data-aos="fade-left">ETF如何買</h3>
+      <div class="text-2xl" data-aos="fade-left">【募集期間限定】</div>
+      <div class="p-10" data-aos="fade-up">
         <!-- <div class="flex flex-wrap justify-center -m-4">
           <div class="m-4 w-full md:w-2/5 py-10 px-4 relative bg-[#3797bd]">
             <h3 class="text-6xl text-center text-white how-to-text-shadow">富邦投信客戶</h3>
@@ -363,24 +444,22 @@
         </div> -->
         <div class="flex flex-wrap justify-center -m-4">
           <div class="m-4">
-            <img class="w-full block" src="./image/section-9/section-9-left-img.svg" alt="">
+            <img class="w-full block" src="./image/section-9/section-9-left-img.svg" alt="" />
             <a href="#" class="-mt-8 block flex justify-center">
-              <img class="w-5/6" src="./image/section-9/section-9-left-btn.svg" alt="">
+              <img class="w-5/6" src="./image/section-9/section-9-left-btn.svg" alt="" />
             </a>
           </div>
           <div class="m-4">
-            <img class="w-full" src="./image/section-9/section-9-right-img.svg" alt="">
+            <img class="w-full" src="./image/section-9/section-9-right-img.svg" alt="" />
             <a href="#" class="-mt-8 block flex justify-center">
-              <img class="w-5/6" src="./image/section-9/section-9-right-btn.svg" alt="">
+              <img class="w-5/6" src="./image/section-9/section-9-right-btn.svg" alt="" />
             </a>
           </div>
         </div>
-      
       </div>
-
     </div>
     <div class="md:container mx-auto px-4 md:px-0 py-10 space-y-20">
-      <div class="describe-info-background flex-col flex flex items-center rounded-xl relative py-10 px-4">
+      <div class="describe-info-background flex-col flex flex items-center rounded-xl relative py-10 px-4" data-aos="fade-left">
         <p class="absolute text-[#14899B] text-center w-full top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-semibold">
           【ETF掛牌上市後】
         </p>
@@ -390,7 +469,7 @@
           </p>
         </div>
       </div>
-      <div class="describe-info-background flex-col flex items-center rounded-xl relative py-10 px-4">
+      <!-- <div class="describe-info-background flex-col flex items-center rounded-xl relative py-10 px-4" data-aos="fade-left">
         <p class="absolute text-[#14899B] text-center w-full top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-semibold">
           【熱烈募集中】
         </p>
@@ -401,8 +480,8 @@
           </p>
           <p class="text-center text-2xl leading-10">(券商名單待確認)</p>
         </div>
-      </div>
-      <div class="describe-info-background flex-col flex items-center rounded-xl relative py-10 px-4">
+      </div> -->
+      <div class="describe-info-background flex-col flex items-center rounded-xl relative py-10 px-4" data-aos="fade-left">
         <p class="absolute text-[#14899B] text-center w-full top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-semibold">
           【富邦投信服務據點】
         </p>
@@ -466,10 +545,10 @@
     </div>
   </div>
 
-  <div class="fund-warning-background">
-    <div class="md:container mx-auto py-10">
-      <h3 class="text-center py-4 text-4xl">【基金警語】</h3>
-      <p class="leading-8">
+  <div class="fund-warning-background overflow-hidden">
+    <div class="md:container mx-auto py-10 px-4">
+      <h3 class="text-center py-4 text-4xl" data-aos="fade-left">【基金警語】</h3>
+      <p class="leading-8 text-justify" data-aos="fade-left">
         【富邦投信獨立經營管理】本基金經金管會同意生效，惟不表示本基金絕無風險。基金經理公司以往之經理績效不保證本基金之最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責本基金之盈虧，亦不保證最低之收益；本文提及之經濟走勢預測不必然代表基金之績效；基金之投資風險及有關基金應負擔之費用已揭露於基金之公開說明書，投資人申購前應詳閱基金公開說明書。本公司及各銷售機構備有簡式公開說明書或公開說明書，歡迎索取；投資人亦可連結至富邦投信網頁(https://www.fubon.com/asset-management/index)或公開資訊觀測站(https://mops.twse.com.tw)查詢。有關本基金運用限制及投資風險之揭露請詳見本基金公開說明書。全球入息不動產與基礎建設指數(以下簡稱指數)為富邦投信與S&P
         Opco, LLC(S&P Dow Jones Indices
         LLC的子公司)簽訂合約以計算及維護之指數；指數為富邦投信所客製；指數並非由
@@ -482,25 +561,25 @@
         Trademark Holdings LLC(“Dow
         Jones”)的註冊商標。本基金以追蹤標的指數「全球入息不動產與基礎建設指數」報酬為目標，因此標的指數價格波動劇烈時，基金之淨資產價值表現亦將有波動之風險。本基金投資成分以涵蓋全球不動產證券投資信託受益證券(REITs)及基礎建設股票為主，投資人投資需承擔此特定產業風險。當此特定產業景氣趨向保守時，企業盈餘及成長性將因此受到抑制，連帶投資成分的表現隨產業景氣收縮而向下修正，將可能影響本基金淨資產表現。此外仍有包括但不限於下列原因致生本基金報酬偏離標的指數報酬之情形：1.基金因應申贖或維持所需曝險比例等因素而進行之交易，將使基金淨值受到交易費用、基金其他必要之費用(如：經理費、保管費、上市費等)、有價證券或期貨成交價格或基金整體曝險比例等因素的影響而使本基金報酬與標的指數產生偏離。2.本基金指數化策略原則上以完全複製法為主，惟遇特殊情形(包括但不限於成分公司事件因素、成分流動性不足、預期標的指數成分即將異動、標的成分因屬於人權爭議或軍火武器等相關標的，基於控管政經風險而無法持有，基金因應申贖或指數調整因不同幣別換匯時間差異及其他市場因素等情況，使基金難以使用完全複製法策略管理投資組合)，將影響基金整體曝險比率，因而使基金報酬與標的指數產生偏離。3.為符合本基金追蹤標的指數績效表現之目標及資金調度需要，本基金得從事證券相關商品之交易。因此若持有的證券相關商品部位流動性不足、期貨轉倉正逆價差大、期貨正逆價差波動升高，亦可能造成本基金報酬所追蹤指數的偏離。4.本基金以新臺幣計價，而本基金所投資的有價證券或證券相關商品可能為新臺幣以外之計價貨幣，因此匯率波動將影響本基金以新臺幣計算之淨資產價值，可能使本基金報酬與標的指數產生偏離。5.本基金標的指數成分股係以調整後殖利率加權篩選，故標的指數成分變動比率較大，將使基金產生額外之交易費用影響基金淨值，進而使本基金報酬與標的指數產生偏離。本基金上市前參與申購所買入的每單位淨資產價值，不等同於基金上市後之價格，參與申購之投資人需自行承擔基金成立日起至上市日止之期間，基金價格波動所產生折/溢價之風險。本基金自上市日起之申購，經理公司將依本基金每一營業日所公告「現金申購買回清單」所載之「每申購買回基數約當淨值」加計110%，向申購人預收申購價金。本基金受益憑證上市後之買賣成交價格無升降幅度限制，並應依臺灣證交所有關規定辦理。本基金所涉之證券市場交易時間不同，因此本基金所涉之證券市場交易可能有無法即時完全反應基金投資組合之價格波動風險。另本基金的淨值反應其一籃子成分市值總合，惟盤中即時估計淨值與實際基金淨值計算之投組內容亦可能有所差異，可能造成交易資訊傳遞落差之風險。本基金為指數股票型基金，投資地區為全球，產業以不動產與基礎建設為主。因此參酌「中華民國證券投資信託暨顧問商業同業公會基金風險報酬等級分類標準」，其風險報酬等級屬RR4，此等級分類係計算過去5年基金淨值波動度標準差，以標準差區間予以分類等級。此等級分類係基於一般市場狀況反映市場價格波動風險，無法涵蓋所有風險(如：基金計價幣別匯率風險、投資標的產業風險、信用風險、利率風險、流動性風險等)，不宜作為投資唯一依據，投資人仍應注意所投資基金個別的風險。請投資人注意申購前應該詳閱公開說明書，充分評估基金投資特性與風險，更多基金評估之相關資料(如年化標準差、Alpha、Beta及Sharpe值等)可至中華民國證券投資信託暨顧問商業同業公會網站之「基金績效及評估指標查詢專區」(https://www.sitca.org.tw/index_pc.aspx)查詢。(投資地區政治、經濟變動之風險)本基金主要投資於所追蹤標的指數相關之有價證券及證券相關商品，因此國內外政經情勢、國際關係之互動、未來發展或現有法規之變動，均可能對本基金所參與的投資市場及投資工具之報酬造成直接或間接的影響。經理公司將盡善良管理人之注意義務，盡力降低投資地區政治、經濟變動之風險，惟不表示風險得以完全規避。此外，本基金指數成分股票涉及有香港地區掛牌交易之中國企業股票，投資人應了解中國仍為一開發中的新興市場國家，其法律及監管架構仍持續發展中，國內外政經情勢、兩岸關係之互動、未來發展或現有法規之變動，均可能對本基金所參與的投資市場報酬造成直接或間接的影響，且標的成分若屬於人權爭議或軍火武器等相關標的，本基金基於控管政經風險而無法持有，及其他市場因素等情況，使基金難以使用完全複製法策略管理投資組合。
         <span class="text-[red] bg-[#fffe5f]">本基金自成立日起至上市日前(不含當日)，經理公司不接受本基金受益權單位數之申購及買回。</span><span
-          class="text-[#0094bd]">本基金並無受存款保險、保險安定基金或其他相關保障機制之保障，投資本基金最大可能損失為全部投資金額。</span>【富邦證券投資信託股份有限公司 0800-070-388
+          class="text-[#0071FF]">本基金並無受存款保險、保險安定基金或其他相關保障機制之保障，投資本基金最大可能損失為全部投資金額。</span>【富邦證券投資信託股份有限公司 0800-070-388
         台北市10557敦化南路一段108號8樓】
       </p>
     </div>
   </div>
 
   <div class="browser-Suggestions-background">
-    <div class="md:container mx-auto text-center py-2 text-[#73d1eb]">
+    <div class="md:container mx-auto text-center py-2 px-4 text-[#73d1eb]">
       最佳瀏覽狀態請使用Internet Explorer 11.0以上
     </div>
   </div>
   <footer class="footer-background">
-    <div class="md:container mx-auto flex justify-between items-center py-10 text-white">
+    <div class="md:container mx-auto flex justify-between items-center py-10 px-4 text-white">
       <div>
         <p>富邦證券投資信託股份有限公司</p>
         <p>總公司：台北市10557敦化南路一段108號8樓</p>
         <p>服務專線：0800-070-388</p>
       </div>
-      <div>
+      <div class="text-right">
         <p>【富邦投信獨立經營管理】</p>
         <p>109年金管投信新字第008號</p>
         <p>www.fubon.com</p>
@@ -511,17 +590,17 @@
     <div class="hidden md:block">
       <div>
         <button>
-          <img class="w-16" src="./image/fixed-1.svg" alt="" srcset="">
+          <img class="w-24" src="./image/fixed-1.svg" alt="" srcset="" />
         </button>
       </div>
       <div>
         <button>
-          <img class="w-16" src="./image/fixed-2.svg" alt="" srcset="">
+          <img class="w-24" src="./image/fixed-2.svg" alt="" srcset="" />
         </button>
       </div>
       <div>
         <button>
-          <img class="w-16" src="./image/fixed-3.svg" alt="" srcset="">
+          <img class="w-24" src="./image/fixed-3.svg" alt="" srcset="" />
         </button>
       </div>
     </div>
@@ -529,43 +608,93 @@
     <div class="md:hidden block">
       <div>
         <button>
-          <img class="w-16" src="./image/fixed.svg" alt="" srcset="">
+          <img class="w-24" src="./image/fixed.svg" alt="" srcset="" />
         </button>
       </div>
     </div>
   </aside>
-  <!-- <aside class="hashtab-btn-group fixed top-[100vw] left-0">
-    <div class="md:container mx-auto py-10 flex justify-center">
+  <aside class="hashtab-btn-group block md:hidden fixed bottom-0 left-0 z-10 w-full">
+    <div class="md:container mx-auto flex justify-center text-xs md:text-base lg:text-lg xl:text-2xl">
       <div
-        class="hashtab-btn-wrap-background flex flex-wrap justify-center -m-[0.5rem] text-2xl px-24 py-5 rounded-l-full rounded-r-full">
-        <div class="m-[0.5rem]">
-          <a href="#reason" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4" >
+        class="hashtab-btn-fix-background flex flex-wrap justify-center -m-[0.5rem] py-5 w-full">
+        <div class="m-[0.5rem] z-10">
+          <a href="#reason" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4 hover-btn-text-bright" >
             實質資產當道
           </a>
         </div>
-        <div class="m-[0.5rem]">
-          <a href="#global" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4">
+        <div class="m-[0.5rem] z-10">
+          <a href="#global" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4 hover-btn-text-bright">
             前瞻全球不動產
           </a>
         </div>
-        <div class="m-[0.5rem]">
-          <a href="#house" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4">
+        <div class="m-[0.5rem] z-10">
+          <a href="#house" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4 hover-btn-text-bright">
             基金小檔案
           </a>
         </div>
-        <div class="m-[0.5rem]">
-          <a href="#download" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4">
+        <div class="m-[0.5rem] z-10">
+          <a href="#download" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4 hover-btn-text-bright">
             下載專區
           </a>
         </div>
-        <div class="m-[0.5rem]">
-          <a href="#howto" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4">
+        <div class="m-[0.5rem] z-10">
+          <a href="#howto" class="block hashtab-btn-background border border-white text-white font-bold rounded-lg py-2 px-4 hover-btn-text-bright">
             ETF如何買
           </a>
         </div>
       </div>
     </div>
-  </aside> -->
+  </aside>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+
+    $(document).ready(function () {
+      var videoSwiper = new Swiper(".video-swiper", {
+        simulateTouch: false
+      });
+
+      $('.video-swiper-btn').click(function () {
+        $('.video-swiper-btn').removeClass('video-btn-active');
+        $(this).addClass('video-btn-active');
+
+        videoSwiper.slideTo($(this).data('video'), 1000, false);
+      })
+
+      var reasonSwiper = new Swiper(".reason-swiper", {
+        navigation: {
+          nextEl: ".reason-swiper-button-next",
+          prevEl: ".reason-swiper-button-prev",
+        },
+        pagination: {
+          el: ".reason-swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<div class="rounded-full w-[2em] h-[2em] flex items-center justify-center ' + className + '">' + (index + 1) + '</div>';
+          },
+        },
+      });
+
+      var globalSwiper = new Swiper(".global-swiper", {
+        navigation: {
+          nextEl: ".global-swiper-button-next",
+          prevEl: ".global-swiper-button-prev",
+        },
+        pagination: {
+          el: ".global-swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<div class="rounded-full w-[2em] h-[2em] flex items-center justify-center ' + className + '">' + (index + 1) + '</div>';
+          },
+        },
+      });
+    })
+  </script>
+
 </body>
 
 </html>
