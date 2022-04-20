@@ -2,3 +2,29 @@
   -webkit-box-reflect: below -71px -webkit-linear-gradient(transparent, transparent 30%, rgba(255,255,255,0.45));
     display: block;
 }
+
+.fixed-1{
+  background: url("../../image/fixed-1.svg") no-repeat;
+  width: 100px;
+  height: 142px;
+  cursor: pointer;
+  &:hover{
+    background: url("../../image/fixed-1-hover.svg") no-repeat;
+  }
+}
+
+.fixed-2{
+  background: url("../../image/fixed-2.svg") no-repeat;
+  width: 100px;
+  height: 142px;
+  cursor: pointer;
+  &:hover{
+    background: url("../../image/fixed-2-hover.svg") no-repeat;
+  }
+}
+
+.fixed-3{
+  background: url("../../image/fixed-3.svg") no-repeat;
+  width: 96px;
+  height: 142px;
+}
