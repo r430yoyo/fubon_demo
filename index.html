@@ -5,12 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link href="./dist/output.css?v=1235" rel="stylesheet" />
-  <link href="./dist/css/app.min.css?v=1235" rel="stylesheet" />
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <link href="./dist/output.css?v=0420" rel="stylesheet" />
+  <link href="./dist/css/app.min.css?v=0420" rel="stylesheet" />
 
-  <!-- <script
-    type="application/javascript">(function (w, d, t, r, u) { w[u] = w[u] || []; w[u].push({ 'projectId': '10000', 'properties': { 'pixelId': '10182000', 'he': '<email_address>' } }); var s = d.createElement(t); s.src = r; s.async = true; s.onload = s.onreadystatechange = function () { var y, rs = this.readyState, c = w[u]; if (rs && rs != "complete" && rs != "loaded") { return } try { y = YAHOO.ywa.I13N.fireBeacon; w[u] = []; w[u].push = function (p) { y([p]) }; y(c) } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr) })(window, document, "script", "https://s.yimg.com/wi/ytc.js", "dotq");</script> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/animate.css"> -->
+
+
+  <script type="application/javascript">(function (w, d, t, r, u) { w[u] = w[u] || []; w[u].push({ 'projectId': '10000', 'properties': { 'pixelId': '10182000', 'he': '<email_address>' } }); var s = d.createElement(t); s.src = r; s.async = true; s.onload = s.onreadystatechange = function () { var y, rs = this.readyState, c = w[u]; if (rs && rs != "complete" && rs != "loaded") { return } try { y = YAHOO.ywa.I13N.fireBeacon; w[u] = []; w[u].push = function (p) { y([p]) }; y(c) } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr) })(window, document, "script", "https://s.yimg.com/wi/ytc.js", "dotq");
+  </script>
 
 </head>
 
@@ -65,18 +68,25 @@
         </div>
       </div>
 
-      <div class="md:container mx-auto flex justify-center">
-        <div class="w-full md:w-4/5 pt-10 md:pt-0">
-          <img class="hidden md:block" src="./image/main-slogan.svg" alt="" />
-          <img class="md:hidden block w-full h-auto" src="./image/main-slogan.png" alt="" />
+      <!-- 4/20 修改 -->
+      <div class="md:container mx-auto flex justify-center relative">
+        <div class="w-full md:w-4/5 pt-10 md:pt-0 flex flex-col items-center absolute lg:-top-10 -z-10">
+          <img class="w-[90%] md:w-9/12 h-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000" src="./image/slogan1.svg" alt="" />
+          <img class="w-[90%] md:w-9/12 h-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500" src="./image/slogan1-sub.svg" alt="" />
         </div>
       </div>
     </header>
 
-    <img class="min-h-[600px] object-cover -z-10" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000"
-      src="./image/top-img.png" alt="" />
+      <!-- 4/20 修改 -->
+    <div>
+      <img class="min-h-[600px] object-cover" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" src="./image/h-1.png" alt="">
+      <div class="absolute bottom-0 left-0">
+        <img class="min-h-[600px] object-cover" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" src="./image/city.png" alt="">
+      </div>
+    </div>
 
-    <div class="hashtab-btn-group hidden md:block absolute w-full bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+    <!-- 4/20 修改 -->
+    <div class="hashtab-btn-group hidden md:block absolute w-full bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10">
       <div class="md:container mx-auto flex justify-center">
         <div class="w-full md:w-11/12 lg:w-9/12  py-10 flex justify-center">
           <div
@@ -117,12 +127,12 @@
     </div>
   </div>
 
-  <div class="video-tab-background pt-10 md:pt-24 w-full overflow-hidden">
+  <div class="video-tab-background pt-10 md:pt-24 w-full">
     <div class="md:container mx-auto px-4 py-2 md:py-10 flex flex-col items-center">
-      <div class="text-6xl mb-10" data-aos="fade-left" id="goVideo">
+      <div class="text-6xl mb-10" data-aos="fade-right" id="goVideo">
         <img class="w-[6em] md:w-[11em]" src="./image/section-2-slogan-star.svg" alt="" />
       </div>
-      <div class="w-full md:w-11/12 lg:w-9/12 bg-white border-8 border-white rounded-2xl w-full overflow-hidden mb-60"
+      <div class="w-full md:w-11/12 lg:w-9/12 bg-white border-8 border-white rounded-2xl w-full mb-60"
         data-aos="fade-up">
         <div
           class="flex flex-wrap describe-info-background md:divide-x md:divide-y-0 divide-y divide-[#2a4f7c] text-xl md:text-2xl">
@@ -179,10 +189,10 @@
     </div>
   </div>
 
-  <div class="reason-background overflow-hidden -mt-px -ml-px" id="reason">
+  <div class="reason-background -mt-px -ml-px" id="reason">
     <div class="md:container mx-auto py-10 px-4">
       <div class="flex flex-col items-center">
-        <div class="text-6xl" data-aos="fade-left">
+        <div class="text-6xl mb-10" data-aos="fade-right">
           <img class="w-[6em] md:w-[7em]" src="./image/section-3-title.svg" alt="" />
         </div>
 
@@ -190,25 +200,25 @@
           <div class="swiper reason-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="flex items-center text-6xl">
-                  <div class="m-4 w-1/4 md:block hidden z-10">
+                <div class="flex items-start text-6xl h-100">
+                  <div class="w-1/4 md:flex hidden justify-end z-10 h-100 items-start">
                     <button class="reason-swiper-slide-prev z-10">
-                      <img class="h-[0.8em]" src="./image/img1-left-text-arrow@2x.png" alt="" />
+                      <img class="w-[100%] h-auto" src="./image/img1-left-text-arrow@2x.png" alt="" />
                     </button>
                   </div>
-                  <div class="m-4 w-full md:w-1/2 flex justify-center">
-                    <img class="h-[2em] md:h-[1.5em]" src="./image/img1-title@2x.png" alt="" />
+                  <div class="w-full md:w-1/2 flex justify-center">
+                    <img class="w-[100%] h-auto" src="./image/img1-title@2x.png" alt="" />
                   </div>
-                  <div class="m-4 w-1/4 md:flex hidden justify-end z-10">
+                  <div class="w-1/4 md:flex hidden justify-start z-10 h-100 items-start">
                     <button class="reason-swiper-slide-next z-10">
-                      <img class="h-[0.5em]" src="./image/img1-right-text-arrow@2x.png" alt="" />
+                      <img class="w-[80%] h-auto" src="./image/img1-right-text-arrow@2x.png" alt="" />
                     </button>
                   </div>
                 </div>
 
-                <div
-                  class="w-full mx-auto mt-15 text-xl md:text-2xl lg:text-3xl leading-10 md:text-center text-left"
-                  data-aos="fade-left">
+                <!-- 4/20 修改 -->
+                <div class="w-full mx-auto mt-15 text-xl md:text-2xl lg:text-3xl md:text-center text-left"
+                  data-aos="fade-right">
                   投資REITs好處多多，如同你擁有一部分的房地產權，收益也是來自租金。<br />
                   儘管各國規定稍有不同，但基本上REITs獲利的大多數必須發放給股東，並且可以免除一部分稅負。
                 </div>
@@ -227,25 +237,25 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="flex items-center text-6xl">
-                  <div class="m-4 w-1/4 md:block hidden z-10">
+                <div class="flex items-start text-6xl h-100">
+                  <div class="w-1/4 md:flex hidden justify-end z-10 h-100 items-start">
                     <button class="reason-swiper-slide-prev z-10">
-                      <img class="h-[0.8em]" src="./image/img2-left-text-arrow@2x.png" alt="" />
+                      <img class="w-[60%] h-auto" src="./image/img2-left-text-arrow@2x.png" alt="" />
                     </button>
                   </div>
-                  <div class="m-4 w-full md:w-1/2 flex justify-center">
-                    <img class="h-[2em] md:h-[1.5em] relfect-2" src="./image/img2-title@2x.png" alt="" />
+                  <div class="w-full md:w-1/2 flex justify-center">
+                    <img class="w-[100%] h-auto" src="./image/img2-title@2x.png" alt="" />
                   </div>
-                  <div class="m-4 w-1/4 md:flex hidden justify-end z-10">
+                  <div class="w-1/4 md:flex hidden justify-start z-10 h-100 items-start">
                     <button class="reason-swiper-slide-next z-10">
-                      <img class="h-[0.5em]" src="./image/img2-right-text-arrow@2x.png" alt="" />
+                      <img class="w-[60%] h-auto" src="./image/img2-right-text-arrow@2x.png" alt="" />
                     </button>
                   </div>
                 </div>
 
-                <div
-                  class="w-full mx-auto mt-15 text-xl md:text-2xl lg:text-3xl leading-10 md:text-center text-left"
-                  data-aos="fade-left">
+                <!-- 4/20 修改 -->
+                <div class="w-full mx-auto mt-15 text-xl md:text-2xl lg:text-3xl md:text-center text-left"
+                  data-aos="fade-right">
                   根據歷史經驗，2000年以來的兩次升息期間，美國REITs指數表現良好，多呈現正報酬。由於升息期間景氣良好、房價上揚，進而推動指數上揚。故在升息趨勢下，相對看好REITs表現。
                 </div>
                 <div class="w-full md:w-11/12 mx-auto relative py-10" data-aos="fade-up">
@@ -260,25 +270,25 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="flex items-center text-6xl">
-                  <div class="m-4 w-1/4 md:block hidden z-10">
+                <div class="flex items-start text-6xl h-100">
+                  <div class="w-1/4 md:flex hidden justify-end z-10 h-100 items-start">
                     <button class="reason-swiper-slide-prev z-10">
-                      <img class="h-[0.8em]" src="./image/img3-left-text-arrow@2x.png" alt="" />
+                      <img class="w-[70%] h-auto" src="./image/img3-left-text-arrow@2x.png" alt="" />
                     </button>
                   </div>
-                  <div class="m-4 w-full md:w-1/2 flex justify-center">
-                    <img class="h-[2em] md:h-[1.5em] relfect-2" src="./image/img3-title@2x.png" alt="" />
+                  <div class="w-full md:w-1/2 flex justify-center">
+                    <img class="w-[100%] h-auto" src="./image/img3-title@2x.png" alt="" />
                   </div>
-                  <div class="m-4 w-1/4 md:flex hidden justify-end z-10">
+                  <div class="w-1/4 md:flex hidden justify-start z-10 h-100 items-start">
                     <button class="reason-swiper-slide-next z-10">
-                      <img class="h-[0.5em]" src="./image/img3-right-text-arrow@2x.png" alt="" />
+                      <img class="w-[70%] h-auto" src="./image/img3-right-text-arrow@2x.png" alt="" />
                     </button>
                   </div>
                 </div>
 
-                <div
-                  class="w-full mx-auto mt-15 text-xl md:text-2xl lg:text-3xl leading-10 md:text-center text-left"
-                  data-aos="fade-left">
+                <!-- 4/20 修改 -->
+                <div class="w-full mx-auto mt-15 text-xl md:text-2xl lg:text-3xl md:text-center text-left"
+                  data-aos="fade-right">
                   2022年疫情陰影逐步趨緩，全球陸續開啟新走向，物業價格及租金通常跟著景氣走，REITs擁有租金調升、配息的優勢。依據歷史資料，當核心CPI出現2%以上的相對高通膨期間，彭博美國REITs指數有出現上漲波段。
                 </div>
                 <div class="w-full md:w-11/12 mx-auto relative py-10" data-aos="fade-up">
@@ -328,20 +338,21 @@
     </div>
   </div>
 
-  <div class="global-area-background overflow-hidden" id="global">
+  <div class="global-area-background" id="global">
     <div class="md:container mx-auto pt-32 pb-20 px-4">
-      <div class="text-6xl flex justify-center" data-aos="fade-left">
+      <div class="text-6xl flex justify-center" data-aos="fade-right">
         <img class="h-[1.25em] md:h-[3em]" src="./image/section-4-slogan.svg" alt="" />
+        <!-- <div class="text-[#1464c3]">不只傳統住宅 廣那REITs各產業入息資產</div> -->
       </div>
       <div class="relative" data-aos="fade-up">
-        <div class="w-4/5 md:w-4/5 mx-auto text-white">
+        <div class="w-12/12 md:w-4/5 mx-auto text-white">
           <div class="swiper global-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div
                   class="global-card-background flex flex-col items-center py-2 px-10 border border-[#3e85b6] rounded-2xl relative before:absolute before:block before:w-full before:h-full before:top-1 before:left-0.5 before:shadow before:shadow-[#689ec5] before:rounded-2xl">
-                  <div class="text-6xl w-[150%] md:w-full flex justify-center">
-                    <img class="h-[2em]" src="./image/section-4-title.svg" alt="" />
+                  <div class="text-6xl w-[100%] md:w-full flex justify-center">
+                    <img class="w-[100%] h-auto" src="./image/section-4-title.svg" alt="" />
                   </div>
                   <div class="font-bold text-xl md:text-3xl">
                     本基金聚焦全球前三十大不動產及基礎建設標的，跨及澳大利亞、日本、比利時、馬來西亞、加拿大、荷蘭、法國、新加坡、德國、西班牙、香港
@@ -373,8 +384,8 @@
               <div class="swiper-slide">
                 <div
                   class="global-card-background flex flex-col items-center py-2 px-10 border border-[#3e85b6] rounded-2xl relative before:absolute before:block before:w-full before:h-full before:top-1 before:left-0.5 before:shadow before:shadow-[#689ec5] before:rounded-2xl">
-                  <div class="text-6xl w-[150%] md:w-full flex justify-center">
-                    <img class="h-[2em]" src="./image/section-4-img2-title@2x.png" alt="" />
+                  <div class="text-6xl w-[100%] md:w-full flex justify-center">
+                    <img class="w-[100%] h-auto" src="./image/section-4-img2-title@2x.png" alt="" />
                   </div>
                   <div class="font-bold text-xl md:text-3xl">
                     本基金廣納REITs各產業入息資產，像是工業商辦、醫療、5G數據中心等。今年以來，隨著疫情逐步解封，各國產業經濟成長，股利率較高的產業集中在醫療、商辦、零售與多樣化。
@@ -405,8 +416,8 @@
               <div class="swiper-slide">
                 <div
                   class="global-card-background flex flex-col items-center py-2 px-10 border border-[#3e85b6] rounded-2xl relative before:absolute before:block before:w-full before:h-full before:top-1 before:left-0.5 before:shadow before:shadow-[#689ec5] before:rounded-2xl">
-                  <div class="text-6xl w-[150%] md:w-full flex justify-center">
-                    <img class="h-[2em]" src="./image/section-4-img3-title@2x.png" alt="" />
+                  <div class="text-6xl w-[100%] md:w-full flex justify-center">
+                    <img class="w-[100%] h-auto" src="./image/section-4-img3-title@2x.png" alt="" />
                   </div>
                   <div class="font-bold text-xl md:text-3xl">
                     富邦全球入息不動產與基礎建設ETF基金聚焦全球16國市場，投資標的包含商辦、零售、酒店、電影院、度假中心，一探究竟成分股篩選流程吧！
@@ -457,7 +468,7 @@
     </div>
   </div>
 
-  <div class="house-table overflow-hidden" id="house">
+  <div class="house-table" id="house">
     <div class="house1 relative" data-aos="fade-up">
       <img class="hidden md:block" src="./image/new-house1.png" alt="" />
       <img class="block md:hidden" src="./image/mobile-new-house1@3x.png" alt="" />
@@ -485,7 +496,7 @@
     </div>
     <div class="house3 relative" data-aos="fade-up">
       <img class="hidden md:block" src="./image/new-house3.png" alt="" />
-      <img class="block md:hidden" src="./image/mobile-new-house3@3x.png" alt="" />
+      <img class="block md:hidden" src="./image/mobile-new-house-1@3x.png" alt="" />
       <!-- <img class="object-cover h[]" src="./image/house3-notree@2x.png" alt="" />
       <img class="absolute bottom-[2%] right-[5%] w-[400px] z-10 hidden lg:block" src="./image/house3-tree@2x.png" alt="" />
       <div class="absolute h-full w-full top-0 left-0 pt-20">
@@ -497,12 +508,12 @@
     </div>
   </div>
 
-  <div class="download-area-background overflow-hidden" id="download">
+  <div class="download-area-background" id="download">
     <div class="md:container mx-auto py-10 px-4 space-y-4 flex flex-col items-center pb-60 mt-1 md:mt-11">
-      <div class="w-full text-6xl flex justify-center" data-aos="fade-left">
+      <div class="w-full text-6xl flex justify-center" data-aos="fade-right">
         <img class="w-[5em] md:w-[7em]" src="./image/section-8-title.svg" alt="" />
       </div>
-      <div class="text-4xl md:text-5xl text-center font-bold text-[#3d2db3] pt-5 md:pt-8" data-aos="fade-left">
+      <div class="text-4xl md:text-5xl text-center font-bold text-[#3d2db3] pt-5 md:pt-8" data-aos="fade-right">
         富邦全球入息不動產與基礎建設ETF基金
       </div>
       <div class="flex flex-wrap md:flex-nowrap md:-m-4 px-10 md:px-0" data-aos="fade-up">
@@ -525,10 +536,10 @@
     </div>
   </div>
 
-  <div class="howto-background overflow-hidden" id="howto">
+  <div class="howto-background" id="howto">
     <div class="md:container mx-auto py-10 px-4 flex flex-col items-center">
-      <h3 class="text-5xl md:text-8xl text-[#534741] py-10 font-semibold" data-aos="fade-left">ETF如何買</h3>
-      <div class="text-4xl" data-aos="fade-left">【募集期間限定】</div>
+      <h3 class="text-5xl md:text-8xl text-[#534741] py-10 font-semibold" data-aos="fade-right">ETF如何買</h3>
+      <div class="text-4xl" data-aos="fade-right">【募集期間限定】</div>
       <div class="w-full p-10" data-aos="fade-up">
         <!-- <div class="flex flex-wrap justify-center -m-4">
           <div class="m-4 w-full md:w-2/5 py-10 px-4 relative bg-[#3797bd]">
@@ -580,31 +591,31 @@
     </div>
     <div class="md:container mx-auto px-4 md:px-0 py-10 space-y-20 pb-40">
       <div class="describe-info-background flex-col flex flex items-center rounded-xl relative py-10 px-4"
-        data-aos="fade-left">
+        data-aos="fade-right">
         <p
           class="absolute text-[#14899B] text-center w-full top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-semibold">
           【ETF掛牌上市後】
         </p>
         <div class="w-full md:w-1/2">
-          <p class="text-center text-2xl leading-10">
+          <p class="text-center text-2xl">
             ETF掛牌上市後，主要透過證券商進行交易，就如同買賣股票一般，請洽詢各證券商營業員；或透過證券商進行電子交易。
           </p>
         </div>
       </div>
-      <!-- <div class="describe-info-background flex-col flex items-center rounded-xl relative py-10 px-4" data-aos="fade-left">
+      <!-- <div class="describe-info-background flex-col flex items-center rounded-xl relative py-10 px-4" data-aos="fade-right">
         <p class="absolute text-[#14899B] text-center w-full top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-semibold">
           【熱烈募集中】
         </p>
         <div class="w-full md:w-4/5">
-          <p class="text-center text-2xl leading-10">
+          <p class="text-center text-2xl">
             開辦券商：富邦證券、日盛證券、凱基證券、兆豐證券、華南永昌證券、永豐金證券
           、第一金證券、元富證券、康和證券、中國信託證券、統一證券、國泰證券、群益金鼎證券、合庫證券。
           </p>
-          <p class="text-center text-2xl leading-10">(券商名單待確認)</p>
+          <p class="text-center text-2xl">(券商名單待確認)</p>
         </div>
       </div> -->
       <div class="describe-info-background flex-col flex items-center rounded-xl relative py-10 px-4"
-        data-aos="fade-left">
+        data-aos="fade-right">
         <p
           class="absolute text-[#14899B] text-center w-full top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-semibold">
           【富邦投信服務據點】
@@ -617,13 +628,13 @@
               </div>
             </div>
             <div class="w-full m-1 md:w-auto flex justify-center">
-              <p class="text-2xl leading-10 mx-4">
+              <p class="text-2xl mx-4">
                 10557台北市敦化南路一段108號8樓
               </p>
 
             </div>
             <div class="w-full m-1 md:w-auto flex justify-center">
-              <p class="text-2xl leading-10">電話：(02)8771-6688</p>
+              <p class="text-2xl">電話：(02)8771-6688</p>
             </div>
           </div>
           <div class="w-full flex flex-wrap md:flex-nowrap md:justify-start justify-center items-center mb-1">
@@ -633,13 +644,13 @@
               </div>
             </div>
             <div class="w-full m-1 md:w-auto flex justify-center">
-              <p class="text-2xl leading-10 mx-4">
+              <p class="text-2xl mx-4">
                 40357台中市柳川西路二段196號7樓
               </p>
 
             </div>
             <div class="w-full m-1 md:w-auto flex justify-center">
-              <p class="text-2xl leading-10">
+              <p class="text-2xl">
                 電話：(04)2220-7166
               </p>
 
@@ -652,13 +663,13 @@
               </div>
             </div>
             <div class="w-full m-1 md:w-auto flex justify-center">
-              <p class="text-2xl leading-10 mx-4">
+              <p class="text-2xl mx-4">
                 80048 高雄市民族二路95號3樓
               </p>
 
             </div>
             <div class="w-full m-1 md:w-auto flex justify-center">
-              <p class="text-2xl leading-10">
+              <p class="text-2xl">
                 電話：(07)238-4577
               </p>
             </div>
@@ -668,10 +679,10 @@
     </div>
   </div>
 
-  <div class="fund-warning-background overflow-hidden">
+  <div class="fund-warning-background">
     <div class="md:container mx-auto py-10 px-4">
-      <h3 class="text-center py-4 text-5xl font-bold" data-aos="fade-left">【基金警語】</h3>
-      <p class="leading-8 text-justify font-bold" data-aos="fade-left">
+      <h3 class="text-center py-4 text-5xl font-bold" data-aos="fade-right">【基金警語】</h3>
+      <p class="leading-7 text-justify font-bold" data-aos="fade-right">
         【富邦投信獨立經營管理】本基金經金管會同意生效，惟不表示本基金絕無風險。基金經理公司以往之經理績效不保證本基金之最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責本基金之盈虧，亦不保證最低之收益；本文提及之經濟走勢預測不必然代表基金之績效；基金之投資風險及有關基金應負擔之費用已揭露於基金之公開說明書，投資人申購前應詳閱基金公開說明書。本公司及各銷售機構備有簡式公開說明書或公開說明書，歡迎索取；投資人亦可連結至富邦投信網頁(<a
           href="https://www.fubon.com/asset-management/index"
           class="text-[#014099]">https://www.fubon.com/asset-management/index</a>)或公開資訊觀測站(<a
@@ -718,12 +729,13 @@
   </footer>
   <aside class="fixed top-1/2 right-0 -translate-y-1/2 px-4 z-10">
     <div class="hidden md:block">
-      <div class="fixed-1 openday-btn">
+      <!-- 4/20 號修改 -->
+      <!-- <div class="fixed-1 openday-btn"> -->
         <!-- <button class="openday-btn">
           <div class="fixed-1"></div>
           <img class="w-24" src="./image/fixed-1.svg" alt="" srcset="" />
         </button> -->
-      </div>
+      <!-- </div> -->
       <a href="#howto">
         <div class="fixed-2"></div>
       </a>
@@ -818,27 +830,27 @@
   </div>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJRPC2JR3P"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJRPC2JR3P"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-LJRPC2JR3P');
-  </script> -->
+  </script>
 
   <!-- Global site tag (gtag.js) - Google Ads: 622980542 -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-622980542"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-622980542"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'AW-622980542');
-  </script> -->
+  </script>
 
   <!-- Meta Pixel Code -->
-  <!-- <script>
+  <script>
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
@@ -854,24 +866,29 @@
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=255914239654233&ev=PageView&noscript=1" /></noscript> -->
+      src="https://www.facebook.com/tr?id=255914239654233&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
 
   <!-- Global site tag (gtag.js) - Google Ads: 10851911868 -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10851911868"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10851911868"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'AW-10851911868');
-  </script> -->
+  </script>
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+  <script src="js/wow.min.js"></script>
   <script>
+    // new WOW().init();
+    AOS.init();
+
     function Facebook() {
       if (confirm('您即將離開『富邦投信官方網站』至第三方網站，如您進入非本公司網站，將不再適用本公司隱私權聲明之涵蓋範圍，建議您於提供個人資料前，應先行審閱該第三方網站之隱私權政策、聲明或相關條款。\r\n')) {
         void (window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://etrade.fsit.com.tw/case/event/highdividend30/index.html'))));
@@ -890,7 +907,7 @@
     }
 
     $(document).ready(function () {
-      AOS.init();
+      // AOS.init();
 
       $('.openday-btn').click(function () {
         $('body').addClass('modal-open');

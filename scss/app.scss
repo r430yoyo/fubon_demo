@@ -67,9 +67,9 @@ body {
 // }
 
 .banner {
-  background-image: url("../../image/section-1-1@2x.png");
-  background-size: 100%;
-  background-position: bottom;
+  background-image: url("../../image/section-1-1@2x.png"),url("../../image/bg-1.jpg");
+  background-size: 100%, auto;
+  background-position: bottom center, bottom 30% center;
   background-repeat: no-repeat;
   z-index: 1;
 }
